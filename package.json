@@ -5,6 +5,7 @@
         "vercel-build": "cd frontend && npm install && npm run build"
     },
     "dependencies": {
-        "mongodb": "^6.13.1"
+        "mongodb": "^6.13.1",
+        "react-scripts": "^5.0.1"
     }
 }
