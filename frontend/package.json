@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "start": "npm run dev",
+    "build": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.7",
