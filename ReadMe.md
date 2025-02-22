@@ -19,5 +19,5 @@ This is a **Node.js + Express + MongoDB** backend for a banking system that supp
 
 ### ** Clone the Repository **
 ```sh
-git clone https://github.com/your-username/paytm-clone-backend.git
+git clone https://github.com/vinit-solanki/PaySphere.git
 cd paytm-clone-backend
