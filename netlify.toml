@@ -1,8 +1,11 @@
 [build]
-  command = "cd frontend && npm install && npm run build"
-  publish = "frontend/dist"
+    command = "npm run build" # or "vite build"
+    publish = "dist"
 
-[dev]
-  framework = "#custom"
-  command = "npm run dev"
-  port = 3000
+    [functions]
+    directory = "netlify/functions"
+
+    [dev]
+    command = "npm run dev" # or "vite"
+    port = 3000
+    targetPort = 3000
