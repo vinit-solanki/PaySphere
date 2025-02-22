@@ -1,13 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const path = require('path');
-require('dotenv').config();
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
 
 const rootRouter = require('./routes/index');
 
 if (!process.env.MONGODB_URI || !process.env.JWT_SECRET) {
-  console.error("❌ Missing env vars");
+  console.error("❌ Missing env vars: MONGODB_URI and JWT_SECRET required");
   process.exit(1);
 }
 
@@ -22,8 +21,5 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1', rootRouter);
-app.use(express.static(path.join(__dirname, 'public')));
-app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+module.exports = app;
