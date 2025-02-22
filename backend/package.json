@@ -21,5 +21,8 @@
     "nodemon": "^3.1.9",
     "session-mongoose": "^0.5.2",
     "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "vite": "^6.1.1"
   }
 }
