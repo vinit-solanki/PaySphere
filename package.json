@@ -2,6 +2,9 @@
     "name": "paytm-clone",
     "version": "1.0.0",
     "scripts": {
-      "vercel-build": "cd frontend && npm install && npm run build"
+        "vercel-build": "cd frontend && npm install && npm run build"
+    },
+    "dependencies": {
+        "mongodb": "^6.13.1"
     }
-  }
+}
