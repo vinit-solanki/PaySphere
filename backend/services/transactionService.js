@@ -1,3 +1,6 @@
+require("dotenv").config({
+      path: path.resolve(__dirname, "../.env")
+});
 const mongoose = require('mongoose');
 const { Account } = require('../schemas/account.schema');
 const { Transaction } = require('../schemas/transaction.schema');
