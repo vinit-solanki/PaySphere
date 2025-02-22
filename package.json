@@ -2,9 +2,11 @@
     "name": "paytm-clone",
     "version": "1.0.0",
     "scripts": {
-        "vercel-build": "cd frontend && npm install && npm run build",
-        "build": "npm run build"
-    },
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "vite",
+        "build": "vite build",
+        "start": "node server.js"
+      },
     "dependencies": {
         "mongodb": "^6.13.1",
         "react-scripts": "^5.0.1"
